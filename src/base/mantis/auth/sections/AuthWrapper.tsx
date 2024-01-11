@@ -28,8 +28,8 @@ const AuthWrapper = ({ children }: Props) => (
         minHeight: '100vh'
       }}
     >
-      <Grid item xs={12} sx={{ ml: 3, mt: 3 }}>
-        <LogoMain />
+      <Grid item xs={12}  sx={{ ml: 3, mt: 3 }}>
+        <LogoMain/>
       </Grid>
       <Grid item xs={12}>
         <Grid

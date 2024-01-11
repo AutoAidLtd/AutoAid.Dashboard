@@ -7,7 +7,7 @@
  * import logoDark from 'assets/images/logo-dark.svg';
 *
 */
- import logo from '@/assets/images/logo.png';
+ import logo from '/image/logo.png';
 
 // ==============================|| LOGO SVG ||============================== //
 
@@ -25,7 +25,7 @@ const LogoMain = (
     *
     */
    <>
-     <img src={ logo} alt="Mantis" width="100" />
+     <img src={ logo} alt="Mantis" className='' width="100" />
    </>
    /*  <>
       <svg width="118" height="35" viewBox="0 0 118 35" fill="none" xmlns="http://www.w3.org/2000/svg">

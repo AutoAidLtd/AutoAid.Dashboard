@@ -12,21 +12,26 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { RecoilRoot } from "recoil";
 import ThemeCustomization from "./themes/index.tsx";
 import { FirebaseProvider } from "./base/store/context/FirebaseContext.tsx";
+import { IntlProvider } from "react-intl";
+import { SocketContext, socket } from "./base/store/context/SocketContext.tsx";
 // import Locales from "@ui/Locales.tsx";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RecoilRoot>
-      <QueryClientProvider client={new QueryClient()}>
-				<FirebaseProvider>
-
-        <ThemeCustomization>
-					{/* <Locales> */}
-          <App />
-					{/* </Locales> */}
-        </ThemeCustomization>
-				</FirebaseProvider>
-        <ReactQueryDevtools initialIsOpen={false} />
-      </QueryClientProvider>
-    </RecoilRoot>
+    <SocketContext.Provider value={socket}>
+      <RecoilRoot>
+        <QueryClientProvider client={new QueryClient()}>
+          <FirebaseProvider>
+            <IntlProvider locale="en">
+              <ThemeCustomization>
+                {/* <Locales> */}
+                <App />
+                {/* </Locales> */}
+              </ThemeCustomization>
+            </IntlProvider>
+          </FirebaseProvider>
+          <ReactQueryDevtools initialIsOpen={false} />
+        </QueryClientProvider>
+      </RecoilRoot>
+    </SocketContext.Provider>
   </React.StrictMode>
 );

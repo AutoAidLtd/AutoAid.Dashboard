@@ -8,7 +8,7 @@
  * import logoIcon from 'assets/images/logo-icon.svg';
 *
 */
-import logoIcon from '@/assets/images/logo.png';
+import logoIcon from '/image/logo.png';
 
 // ==============================|| LOGO ICON SVG ||============================== //
 
