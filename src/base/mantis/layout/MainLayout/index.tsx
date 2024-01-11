@@ -9,7 +9,7 @@ import { useTheme } from "@mui/material/styles";
 // project import
 import Breadcrumbs from '@/base/components/@extended/Breadcrumbs';
 import useConfig from "@/base/hooks/useConfig";
-import navigation from "@/base/menu-items";
+import navigation from "@/base/mantis/menu-items";
 import { menuWithDrawerOpen } from "@/base/store/selectors/app";
 import { useRecoilState } from "recoil";
 import Drawer from "./Drawer";

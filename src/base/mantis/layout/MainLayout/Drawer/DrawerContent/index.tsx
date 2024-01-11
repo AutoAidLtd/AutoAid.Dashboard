@@ -6,7 +6,7 @@
 // project import
 // import NavCard from "./NavCard";
 import Navigation from "./Navigation";
-import SimpleBar from "../../../../components/third-party/SimpleBar";
+import SimpleBar from "@/base/components/third-party/SimpleBar";
 // import { menuWithDrawerOpen } from "@/base/store/selectors/app";
 // import { useRecoilValue } from "recoil";
 

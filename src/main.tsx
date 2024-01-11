@@ -9,11 +9,24 @@ import {
   ReactQueryDevtoolsPanel,
 } from "react-query/devtools";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { RecoilRoot } from "recoil";
+import ThemeCustomization from "./themes/index.tsx";
+import { FirebaseProvider } from "./base/store/context/FirebaseContext.tsx";
+// import Locales from "@ui/Locales.tsx";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <QueryClientProvider client={new QueryClient()}>
-      <App />
-      <ReactQueryDevtools initialIsOpen={false} />
-    </QueryClientProvider>
+    <RecoilRoot>
+      <QueryClientProvider client={new QueryClient()}>
+				<FirebaseProvider>
+
+        <ThemeCustomization>
+					{/* <Locales> */}
+          <App />
+					{/* </Locales> */}
+        </ThemeCustomization>
+				</FirebaseProvider>
+        <ReactQueryDevtools initialIsOpen={false} />
+      </QueryClientProvider>
+    </RecoilRoot>
   </React.StrictMode>
 );
