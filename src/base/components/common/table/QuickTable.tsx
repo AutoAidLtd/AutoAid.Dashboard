@@ -81,22 +81,22 @@ function QuickTable<T>(props: Props<T>) {
   };
   //========Expose pagination change
   useEffect(() => {
-    onPaginationChange(pagination);
+    onPaginationChange?.(pagination);
   }, [pagination]);
   useEffect(() => {
-    onRowSelectedChange(rowSelected);
+    onRowSelectedChange?.(rowSelected??{} as any);
   }, [rowSelected]);
   useEffect(() => {
-    onSortByChange(sortBy);
+    onSortByChange?.(sortBy ?? {} as any);
   }, [sortBy]);
   useEffect(() => {
-    onSearchKeywordChange(keyword);
+    onSearchKeywordChange?.(keyword ?? "");
   }, [keyword]);
   return (
     <ScrollX>
       <ListTableHeader
         search={{
-          keyword: keyword,
+          keyword: keyword??"",
           setKeyword: (q) => {
             setKeyword(q);
           },

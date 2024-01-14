@@ -1,7 +1,6 @@
 // project import
 // import dashboard from './dashboard';
 import { NavItemType } from '@/types/menu';
-import { admin } from "./@homekitchen/admin";
 import { application, general } from './@autoaid';
 // ==============================|| MENU ITEMS ||============================== //
 

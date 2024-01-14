@@ -14,6 +14,11 @@ import ThemeCustomization from "./themes/index.tsx";
 import { FirebaseProvider } from "./base/store/context/FirebaseContext.tsx";
 import { IntlProvider } from "react-intl";
 import { SocketContext, socket } from "./base/store/context/SocketContext.tsx";
+/**
+ *
+ * Fix regeneratorRuntime is not defined
+ */
+import "regenerator-runtime";
 // import Locales from "@ui/Locales.tsx";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -24,7 +29,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <IntlProvider locale="en">
               <ThemeCustomization>
                 {/* <Locales> */}
-                <App />
+                	<App />
                 {/* </Locales> */}
               </ThemeCustomization>
             </IntlProvider>

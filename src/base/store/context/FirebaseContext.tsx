@@ -36,7 +36,7 @@ export const FirebaseProvider = ({ children }: { children: React.ReactElement })
   useEffect(() => {
 
     onAuthStateChanged(auth, (user) => {
-      
+			
       if (user) {
         dispatch({
             isLoggedIn: true,

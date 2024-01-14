@@ -80,7 +80,7 @@ export const application: NavItemType = {
       title: "garage",
       type: "item",
       icon: icons.SnippetsOutlined,
-      url: "/order/list",
+      url: "/garage",
       breadcrumbs: true,
     }
   ],
