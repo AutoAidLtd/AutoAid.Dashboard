@@ -1,32 +1,68 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import eng from "./en/en.json";
+import supportLocales from "./supportLocal.json"
+
+import en from "./locale/en.json"
+import fr from "./locale/fr.json"
+import vi from "./locale/vi.json"
+import ja from "./locale/ja.json"
+
 // the translations
 // (tip move them in a JSON file and import them,
 // or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
+const importResources = async()=>{
+	return supportLocales.reduce(async(prev, curr)=>{
+		return {...prev,
+		[curr]:	{
+				translation : await import(`./locale/${curr}.json`)
+			}
+		}
+	},{})
+}
 const resources = {
   en: {
-    translation: eng,
+    translation: en,
   },
   fr: {
-    translation: {
-      "Welcome to React": "Bienvenue à React et react-i18next",
-    },
+    translation: fr
   },
+	vi:{
+		translation: vi
+	},
+	ja :{
+		translation: ja
+	}
 };
 
-i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
-  .init({
-    resources,
-    fallbackLng: "en",
-    lng: "en", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
-    // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
-    // if you're using a language detector, do not define the lng option
+// i18n
+//   .use(initReactI18next) // passes i18n down to react-i18next
+//   .init({
+// 		//TODO how to use importResources here
+//     resources: {},
+//     fallbackLng: "en",
+//     lng: "en", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+//     // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
+//     // if you're using a language detector, do not define the lng option
+//     interpolation: {
+//       escapeValue: false, // react already safes from xss
+//     },
+//   });
 
-    interpolation: {
-      escapeValue: false, // react already safes from xss
-    },
-  });
+// const initI18n = async () => {
+//   const resources = await importResources();
+	
+  i18n
+    .use(initReactI18next)
+    .init({
+      resources,
+      fallbackLng: "en",
+      lng: "en",
+      interpolation: {
+        escapeValue: false,
+      },
+    });
+// };
+
+// initI18n();
 
 export default i18n;

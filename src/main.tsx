@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import "./utils/lang/i18n.ts";
+import i18n from "./utils/lang/i18n.ts";
 // import "./utils/errorTracking/sentry";
 import "./index.css";
 import {
@@ -14,6 +14,7 @@ import ThemeCustomization from "./themes/index.tsx";
 import { FirebaseProvider } from "./base/store/context/FirebaseContext.tsx";
 import { IntlProvider } from "react-intl";
 import { SocketContext, socket } from "./base/store/context/SocketContext.tsx";
+import { I18nextProvider } from "react-i18next";
 /**
  *
  * Fix regeneratorRuntime is not defined
@@ -26,13 +27,16 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <RecoilRoot>
         <QueryClientProvider client={new QueryClient()}>
           <FirebaseProvider>
-            <IntlProvider locale="en">
+						<I18nextProvider i18n={i18n}>
+
+            {/* <IntlProvider locale="en"> */}
               <ThemeCustomization>
                 {/* <Locales> */}
                 	<App />
                 {/* </Locales> */}
               </ThemeCustomization>
-            </IntlProvider>
+						</I18nextProvider>
+            {/* </IntlProvider> */}
           </FirebaseProvider>
           <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>

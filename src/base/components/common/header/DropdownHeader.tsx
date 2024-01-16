@@ -6,9 +6,11 @@ import { v4 as uuidv4 } from "uuid";
 import { Box, DropdownList, DropdownListOptions } from "../layout";
 import { Select } from "../select";
 import SelectItem from "../select/SelectItem";
+import { useTranslation } from "react-i18next";
 
 // const Check = motion(DropdownList);
 const DropdownHeader = () => {
+	const {t} = useTranslation()
   const options: DropdownListOptions[] = [
     {
       label: "Settings",

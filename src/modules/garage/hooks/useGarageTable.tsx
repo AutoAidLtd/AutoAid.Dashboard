@@ -8,8 +8,6 @@ import Avatar from '@ui/@extended/Avatar';
 import IconButton from '@ui/@extended/IconButton';
 import { IndeterminateCheckbox } from '@ui/third-party/ReactTable';
 import { useMemo } from 'react';
-import NumberFormat from 'react-number-format';
-
 
 const useGarageTable = () => {
 	const theme = useTheme();
@@ -29,11 +27,13 @@ const useGarageTable = () => {
             },
           }) => (
             <IndeterminateCheckbox
-              {...{
+              {
+                ...{
                 checked: getIsAllRowsSelected(),
                 indeterminate: getIsSomeRowsSelected(),
                 onChange: getToggleAllRowsSelectedHandler(),
-              }}
+                }
+              }
             />
           ),
           cell: ({ row }) => (

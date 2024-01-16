@@ -2,7 +2,7 @@ import csv
 import json
 
 # Input CSV file and output directory
-input_csv_file = 'translations.csv'  # Replace with your CSV file path
+input_csv_file = 'translation.csv'  # Replace with your CSV file path
 output_dir = './utils/lang/locale'  # Directory where JSON files will be saved
 
 # Create the output directory if it doesn't exist
@@ -11,7 +11,7 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # Languages to extract
-languages = ['en', 'vi', 'ko']
+languages = ['en', 'vi', 'ja','fr']
 
 for language in languages:
     json_data = {}

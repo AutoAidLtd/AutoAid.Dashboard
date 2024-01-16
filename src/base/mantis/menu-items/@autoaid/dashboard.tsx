@@ -32,7 +32,7 @@ const icons = {
 
 export const dashboard: NavItemType = {
   id: "dashboard",
-  title: <FormattedMessage id="dashboard" />,
+  title: "dashboard" ,
   type: "item",
   url: "/apps/chat",
   icon: icons.DashboardOutlined,
@@ -45,7 +45,7 @@ export const general: NavItemType = {
   children: [
     {
       id: "dashboard",
-      title: <FormattedMessage id="dashboard" />,
+      title: "Dashboard",
       type: "item",
       url: "/dashboard",
       icon: icons.DashboardOutlined,
@@ -69,7 +69,7 @@ export const application: NavItemType = {
   children: [
     {
       id: "customer",
-      title: <FormattedMessage id="dashboard" />,
+      title: "dashboard" ,
       type: "item",
       url: "/dashboard",
       icon: icons.DashboardOutlined,

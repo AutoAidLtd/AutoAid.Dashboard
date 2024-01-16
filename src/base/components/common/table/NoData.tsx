@@ -2,7 +2,7 @@
 
 
 
-const NoData = () => {
+const NoData = ({noOfRows}:{noOfRows: number}) => {
   return (
     // <Box component={"p"} sx={{
     //   padding: "1rem",
@@ -10,8 +10,8 @@ const NoData = () => {
     // }} display={"flex"} justifyContent={"center"} alignItems={"center"}>NoData</Box>
     <>
     <tr>
-    <td>
-    Nodata
+    <td rowSpan={noOfRows}>
+	    No data
     </td>
     </tr>
     </>
