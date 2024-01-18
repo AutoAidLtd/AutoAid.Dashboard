@@ -12,6 +12,7 @@ import NavItem from './NavItem';
 import { menuWithDrawerOpen } from '@/base/store/selectors/app';
 import { NavItemType } from '@/types/menu';
 import { useRecoilValue } from 'recoil';
+import { useTranslation } from 'react-i18next';
 
 // ==============================|| NAVIGATION - LIST GROUP ||============================== //
 
@@ -22,6 +23,9 @@ interface Props {
 const NavGroup = ({ item }: Props) => {
   const theme = useTheme();
   const drawerOpen = useRecoilValue(menuWithDrawerOpen);
+
+	const {t} = useTranslation()
+
 
   const navCollapse = item.children?.map((menuItem) => {
     switch (menuItem.type) {
@@ -45,11 +49,11 @@ const NavGroup = ({ item }: Props) => {
         drawerOpen && (
           <Box sx={{ pl: 3, mb: 1.5 }}>
             <Typography variant="subtitle2" color={theme.palette.mode === 'dark' ? 'textSecondary' : 'text.secondary'}>
-              {item.title}
+              {t(item.title as string)}
             </Typography>
             {item.caption && (
               <Typography variant="caption" color="secondary">
-                {item.caption}
+                {t(item.caption as string)}
               </Typography>
             )}
           </Box>

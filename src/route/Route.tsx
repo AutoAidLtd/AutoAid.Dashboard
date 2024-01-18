@@ -3,7 +3,7 @@ import LandingLayout from "../base/components/layout/LandingLayout";
 import appRoutes from "@/base/app/route";
 import MainLayout from "@/base/mantis/layout/MainLayout";
 import LoginPage from "@/base/mantis/auth/LoginPage";
-import GaragePage from "@/pages/garage/GaragePage";
+import GaragePage from "@/modules/garage/pages/GaragePage";
 
 const routes: RouteObject[] = [
 	{

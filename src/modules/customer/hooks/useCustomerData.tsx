@@ -1,14 +1,15 @@
 import { PagedList } from '@/base/service/common';
-import { SocketContext } from '@/base/store/context/SocketContext'
-import { GarageAdmin } from '@/types/@autoaid/entity/garage';
+import { SocketContext } from '@/base/store/context/SocketContext';
 import { PaginationState, SortingState } from '@tanstack/react-table';
 import React, { useContext, useEffect, useState } from 'react'
+
+type Props = {}
 enum GarageAdminReceiveEvent{
 	GARAGE_ADMIN_LIST = "GARAGE_ADMIN_LIST"
 
 }
 
-const useGarageData = () => {
+const useCustomerData = (props: Props) => {
 	const socket = useContext(SocketContext)
 	const [pagination, setPagination] = useState<PaginationState>({
     pageIndex: 0,
@@ -51,4 +52,4 @@ const useGarageData = () => {
 	)
 }
 
-export default useGarageData
+export default useCustomerData

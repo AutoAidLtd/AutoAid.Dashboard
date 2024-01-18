@@ -1,4 +1,7 @@
 {
   "hi": "Hello",
-  "bye": "Bye"
+  "bye": "Bye",
+  "add_garage": "Add Garage",
+  "garage": "Garage",
+  "dashboard": "Dashboard"
 }

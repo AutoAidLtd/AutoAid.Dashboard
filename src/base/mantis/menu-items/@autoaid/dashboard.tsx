@@ -11,7 +11,15 @@ import {
   SnippetsOutlined,
   ShopOutlined,
 } from "@ant-design/icons";
-import { Map, Payment } from "@mui/icons-material";
+import {
+	 Map,
+	Payment, 
+	PeopleOutline,
+	ReceiptOutlined,
+	ChatBubbleOutline,
+	WarehouseOutlined,
+	AssessmentOutlined
+} from "@mui/icons-material";
 // type
 import { NavItemType } from "@/types/menu";
 
@@ -25,7 +33,12 @@ const icons = {
   SnippetsOutlined,
   ShopOutlined,
   Map,
-  Payment
+  Payment,
+	PeopleOutline,
+	ReceiptOutlined,
+	ChatBubbleOutline,
+	WarehouseOutlined,
+	AssessmentOutlined
 };
 
 // ==============================|| MENU ITEMS - APPLICATIONS ||============================== //
@@ -45,7 +58,7 @@ export const general: NavItemType = {
   children: [
     {
       id: "dashboard",
-      title: "Dashboard",
+      title: "dashboard",
       type: "item",
       url: "/dashboard",
       icon: icons.DashboardOutlined,
@@ -55,7 +68,7 @@ export const general: NavItemType = {
       id: "analytics",
       title: "analytics",
       type: "item",
-      icon: icons.SnippetsOutlined,
+      icon: icons.AssessmentOutlined,
       url: "/order/list",
       breadcrumbs: true,
     }
@@ -69,19 +82,38 @@ export const application: NavItemType = {
   children: [
     {
       id: "customer",
-      title: "dashboard" ,
+      title: "customer" ,
       type: "item",
-      url: "/dashboard",
-      icon: icons.DashboardOutlined,
-      breadcrumbs: false,
+      url: "/customer",
+      icon: icons.PeopleOutline,
+      breadcrumbs: true,
     },
     {
-      id: "Garage",
+      id: "garage",
       title: "garage",
       type: "item",
-      icon: icons.SnippetsOutlined,
+      icon: icons.WarehouseOutlined,
       url: "/garage",
       breadcrumbs: true,
-    }
+			// caption: "Manage garages in system"
+    },
+    {
+      id: "transaction",
+      title: "transaction",
+      type: "item",
+      icon: icons.ReceiptOutlined,
+      url: "/transaction",
+      breadcrumbs: true,
+			// caption: "Manage garages in system"
+    },
+    {
+      id: "chat",
+      title: "chat",
+      type: "item",
+      icon: icons.ChatBubbleOutline,
+      url: "/chat",
+      breadcrumbs: true,
+			// caption: "Manage garages in system"
+    },
   ],
 };

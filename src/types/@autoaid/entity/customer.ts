@@ -1,5 +1,3 @@
-import { Place } from "./place.";
-
 export interface GarageAdmin {
 	garage_id: number;
 	created_date: Date;
@@ -17,5 +15,4 @@ export interface GarageAdmin {
 	ownerName?: string;
 	ownerEmail?: string;
 	ownerPhone?: string;
-	place?:Place
 }

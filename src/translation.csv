@@ -1,3 +1,6 @@
-key,menu,en,vi,fr,ja
-hi,common,Hello,Xin chào,Bonjour,お問い合わせ
-bye,common,Bye,Tạm biệt,Au revoir,ログイン
+key,menu,en,vi,fr,ko
+hi,common,Hello,Xin chào,Bonjour,
+bye,common,Bye,Tạm biệt,Au revoir,
+add_garage,common,Add Garage,Thêm Garage,Ajouter un garage,차고 추가
+garage,common,Garage,Garage,Garage,주차안내
+dashboard,common,Dashboard,Bảng ,Tableau de bord,대시보드

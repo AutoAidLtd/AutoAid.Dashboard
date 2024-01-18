@@ -23,24 +23,22 @@ import "regenerator-runtime";
 // import Locales from "@ui/Locales.tsx";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <SocketContext.Provider value={socket}>
-      <RecoilRoot>
-        <QueryClientProvider client={new QueryClient()}>
-          <FirebaseProvider>
-						<I18nextProvider i18n={i18n}>
-
-            {/* <IntlProvider locale="en"> */}
+    <I18nextProvider i18n={i18n}>
+      <SocketContext.Provider value={socket}>
+        <RecoilRoot>
+          <QueryClientProvider client={new QueryClient()}>
+            <FirebaseProvider>
+              {/* <IntlProvider locale="en"> */}
               <ThemeCustomization>
                 {/* <Locales> */}
-                	<App />
+                <App />
                 {/* </Locales> */}
               </ThemeCustomization>
-						</I18nextProvider>
-            {/* </IntlProvider> */}
-          </FirebaseProvider>
-          <ReactQueryDevtools initialIsOpen={false} />
-        </QueryClientProvider>
-      </RecoilRoot>
-    </SocketContext.Provider>
+              {/* </IntlProvider> */}
+            </FirebaseProvider>
+          </QueryClientProvider>
+        </RecoilRoot>
+      </SocketContext.Provider>
+    </I18nextProvider>
   </React.StrictMode>
 );

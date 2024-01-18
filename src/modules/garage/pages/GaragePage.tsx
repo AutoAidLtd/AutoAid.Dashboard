@@ -10,14 +10,20 @@ import { useTranslation } from "react-i18next"
 
 const GaragePage = () => {
 	const {columns} = useGarageTable()
-	useGarageData()
+	const {garageRows,setPagination,totalRows} =useGarageData()
 	const {t} = useTranslation()
 	return (
-		<MainCard content={false}> 
+		<MainCard content={false}>
 			<QuickTable<GarageAdmin>
-			totalRows={100}
+			totalRows={totalRows}
 			columns={columns}
-			data={[]}
+			data={garageRows??[]}
+			addButton={{
+				isShown:true,
+				buttonContentLangKey: "add_garage",
+				addButtonHandler: ()=> {console}
+			}}
+			onPaginationChange={(pagination)=>setPagination(pagination)}
 			/>
 		</MainCard>
 	)

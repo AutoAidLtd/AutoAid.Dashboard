@@ -6,6 +6,7 @@ import en from "./locale/en.json"
 import fr from "./locale/fr.json"
 import vi from "./locale/vi.json"
 import ja from "./locale/ja.json"
+import ko from "./locale/ko.json"
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -31,7 +32,12 @@ const resources = {
 	},
 	ja :{
 		translation: ja
-	}
+	},
+	
+	ko :{
+		translation: ko
+	},
+
 };
 
 // i18n
