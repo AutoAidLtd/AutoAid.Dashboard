@@ -1,4 +1,4 @@
-import { PagedList } from '@/base/service/common';
+import { Pageable, PagedList } from '@/base/service/common';
 import { SocketContext } from '@/base/store/context/SocketContext'
 import { GarageAdmin } from '@/types/@autoaid/entity/garage';
 import { PaginationState, SortingState } from '@tanstack/react-table';
@@ -41,12 +41,31 @@ const useGarageData = () => {
 			socket.off(GarageAdminReceiveEvent.GARAGE_ADMIN_LIST)
 		}
 	},[])
+	useEffect(()=>{
+		console.log(sortState);
+		
+		const pageable  = {
+			page: pagination.pageIndex+1 ?? 1,
+			pageSize : pagination?.pageSize ?? 25,
+			sort : sortState?.map(ss => ({
+				by: ss.id,
+				direction: ss.desc ? "desc" : "asc"
+			}),
+			)??[],
+			keyword
+		} as Pageable
+		
+		socket.emit(GarageAdminReceiveEvent.GARAGE_ADMIN_LIST, pageable)
+	},[pagination, sortState, keyword])
 	return (
 	{
 		garageRows:data,
 		// pagination,
 		setPagination,
-		totalRows
+		totalRows,
+		setKeyword,
+		setSortState,
+		setId
 	}
 	)
 }

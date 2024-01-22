@@ -60,7 +60,7 @@ export const general: NavItemType = {
       id: "dashboard",
       title: "dashboard",
       type: "item",
-      url: "/dashboard",
+      url: "/",
       icon: icons.DashboardOutlined,
       breadcrumbs: false,
     },
@@ -69,8 +69,8 @@ export const general: NavItemType = {
       title: "analytics",
       type: "item",
       icon: icons.AssessmentOutlined,
-      url: "/order/list",
-      breadcrumbs: true,
+      url: "/analytic",
+      breadcrumbs: false,
     }
   ],
 };

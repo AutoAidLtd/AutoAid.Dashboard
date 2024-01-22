@@ -56,7 +56,22 @@ const useGarageTable = () => {
               overflow: 'hidden',
               textOverflow: 'ellipsis',
               }} textAlign={"center"}>
-              CUS-{row?.original?.garage_id}
+              GAR-{row?.original?.garage_id}
+            </Typography>
+          )
+        }),
+				//TODO : remove later
+        columnHelper.accessor<any,any>("name", {
+          header: () => {
+            return "Name";
+          },
+          cell: ({ row }) => (
+            <Typography  sx={{
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              }} textAlign={"center"}>
+              Garage Name
             </Typography>
           )
         }),
@@ -113,7 +128,7 @@ const useGarageTable = () => {
           enableSorting: false,
         }),
         columnHelper.accessor("address", {
-          header: "Order",
+          header: "Address",
           cell: ({ renderValue }) => (
             <Typography textAlign={"left"}>{(renderValue() ?? 0 ) as any}</Typography>
           ),
@@ -123,12 +138,12 @@ const useGarageTable = () => {
           enableSorting: false,
         }),
         columnHelper.accessor("introduction", {
-          header: "Spent",
+          header: "About",
           cell: ({ renderValue }) => (
             <Typography textAlign={"left"}>{(renderValue() ?? 0 ) as any}</Typography>
           ),
           meta: {
-            align : "right"
+            align : "left"
           },
           enableSorting: false,
 
