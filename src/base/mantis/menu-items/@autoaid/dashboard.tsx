@@ -98,11 +98,11 @@ export const application: NavItemType = {
 			// caption: "Manage garages in system"
     },
     {
-      id: "transaction",
-      title: "transaction",
+      id: "invoice",
+      title: "invoice",
       type: "item",
       icon: icons.ReceiptOutlined,
-      url: "/transaction",
+      url: "/invoice",
       breadcrumbs: true,
 			// caption: "Manage garages in system"
     },

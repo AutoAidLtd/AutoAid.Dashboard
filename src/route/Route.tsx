@@ -8,6 +8,7 @@ import CustomerPage from "@/modules/customer/pages/CustomerPage";
 import DashboardPage from "@/modules/dashboard/pages/DashboardPage";
 import AnalyticPage from "@/modules/analytic/page/AnalyticPage";
 import InboxPage from "@/modules/inbox/pages/InboxPage";
+import InvoicesPage from "@/modules/invoice/pages/InvoicesPage";
 
 const routes: RouteObject[] = [
 	{
@@ -35,6 +36,12 @@ const routes: RouteObject[] = [
 				path: "/analytic",
 				element: <AnalyticPage/>,
 			},
+			
+			{
+				path: "/invoice",
+				element: <InvoicesPage/>,
+			},
+
       {
         path: "/contact",
         element: <h1>Click below to contact</h1>,
