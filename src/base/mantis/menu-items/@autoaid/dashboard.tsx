@@ -111,8 +111,8 @@ export const application: NavItemType = {
       title: "chat",
       type: "item",
       icon: icons.ChatBubbleOutline,
-      url: "/chat",
-      breadcrumbs: true,
+      url: "/inbox",
+      breadcrumbs: false,
 			// caption: "Manage garages in system"
     },
   ],

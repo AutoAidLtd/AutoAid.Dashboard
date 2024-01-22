@@ -7,6 +7,7 @@ import GaragePage from "@/modules/garage/pages/GaragePage";
 import CustomerPage from "@/modules/customer/pages/CustomerPage";
 import DashboardPage from "@/modules/dashboard/pages/DashboardPage";
 import AnalyticPage from "@/modules/analytic/page/AnalyticPage";
+import InboxPage from "@/modules/inbox/pages/InboxPage";
 
 const routes: RouteObject[] = [
 	{
@@ -37,6 +38,10 @@ const routes: RouteObject[] = [
       {
         path: "/contact",
         element: <h1>Click below to contact</h1>,
+      },
+      {
+        path: "/inbox",
+        element: <InboxPage/>,
       },
 
     ],
