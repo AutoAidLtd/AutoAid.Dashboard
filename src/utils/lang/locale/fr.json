@@ -3,5 +3,11 @@
   "bye": "Au revoir",
   "add_garage": "Ajouter un garage",
   "garage": "Garage",
-  "dashboard": "Tableau de bord"
+  "dashboard": "Tableau de bord",
+  "customer": "Client",
+  "transaction": "Transaction",
+  "general": "Généralités",
+  "analytic": "Analytique",
+  "invoice": "Facture",
+  "chat": "Boîte de réception"
 }

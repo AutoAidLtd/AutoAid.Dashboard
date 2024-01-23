@@ -3,5 +3,11 @@
   "bye": "Tạm biệt",
   "add_garage": "Thêm Garage",
   "garage": "Garage",
-  "dashboard": "Bảng "
+  "dashboard": "Bảng ",
+  "customer": "Khách hàng",
+  "transaction": "Giao dịch",
+  "general": "Tổng Quát",
+  "analytic": "Thống Kê",
+  "invoice": "Hóa đơn",
+  "chat": "Tin nhắn"
 }

@@ -66,7 +66,7 @@ export const general: NavItemType = {
     },
     {
       id: "analytics",
-      title: "analytics",
+      title: "analytic",
       type: "item",
       icon: icons.AssessmentOutlined,
       url: "/analytic",

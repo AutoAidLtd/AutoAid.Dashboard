@@ -36,7 +36,7 @@ const HeaderContent = () => {
 
       <Notification />
       {/* <Message /> */}
-      <Customization />
+      {/* <Customization /> */}
       {!matchesXs && <Profile />}
       {matchesXs && <MobileSection />}
     </>

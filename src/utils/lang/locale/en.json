@@ -3,5 +3,11 @@
   "bye": "Bye",
   "add_garage": "Add Garage",
   "garage": "Garage",
-  "dashboard": "Dashboard"
+  "dashboard": "Dashboard",
+  "customer": "Customer",
+  "transaction": "Transaction",
+  "general": "General",
+  "analytic": "Analytic",
+  "invoice": "Invoice",
+  "chat": "Inbox"
 }

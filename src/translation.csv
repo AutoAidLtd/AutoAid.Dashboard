@@ -4,3 +4,9 @@ bye,common,Bye,Tạm biệt,Au revoir,
 add_garage,common,Add Garage,Thêm Garage,Ajouter un garage,차고 추가
 garage,common,Garage,Garage,Garage,주차안내
 dashboard,common,Dashboard,Bảng ,Tableau de bord,대시보드
+customer,common,Customer,Khách hàng,Client,회사연혁
+transaction,common,Transaction,Giao dịch,Transaction,계정 관리
+general,common,General,Tổng Quát,Généralités,주요사업
+analytic,common,Analytic,Thống Kê,Analytique,분석
+invoice,common,Invoice,Hóa đơn,Facture,연락처
+chat,common,Inbox,Tin nhắn,Boîte de réception,회사 소개

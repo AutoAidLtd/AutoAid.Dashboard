@@ -3,5 +3,11 @@
   "bye": "",
   "add_garage": "차고 추가",
   "garage": "주차안내",
-  "dashboard": "대시보드"
+  "dashboard": "대시보드",
+  "customer": "회사연혁",
+  "transaction": "계정 관리",
+  "general": "주요사업",
+  "analytic": "분석",
+  "invoice": "연락처",
+  "chat": "회사 소개"
 }
