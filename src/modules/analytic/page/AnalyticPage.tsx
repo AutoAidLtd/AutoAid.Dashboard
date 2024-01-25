@@ -9,8 +9,8 @@ import AnalyticsCard05 from '../components/AnalyticsCard05';
 import AnalyticsCard06 from '../components/AnalyticsCard06';
 import AnalyticsCard07 from '../components/AnalyticsCard07';
 import AnalyticsCard08 from '../components/AnalyticsCard08';
-import AnalyticsCard09 from '../components/AnalyticsCard09';
-import AnalyticsCard10 from '../components/AnalyticsCard10';
+import AnalyticsCardCustomerAge from '../components/AnalyticsCardCustomerAge';
+import AnalyticsCard10 from '../components/AnalyticsCardCustomerGender';
 import AnalyticsCard11 from '../components/AnalyticsCard11';
 
 const AnalyticPage = () => {
@@ -69,7 +69,7 @@ const AnalyticPage = () => {
               {/* Doughnut chart (Sessions By Device) */}
               <AnalyticsCard08 />
               {/* Doughnut chart (Visit By Age Category) */}
-              <AnalyticsCard09 />
+              <AnalyticsCardCustomerAge />
               {/* Polar chart (Sessions By Gender) */}
               <AnalyticsCard10 />
               {/* Table (Top Products) */}

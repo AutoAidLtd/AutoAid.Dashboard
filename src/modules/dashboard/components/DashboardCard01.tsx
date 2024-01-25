@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LineChart from './charts/LineChart01';
@@ -31,12 +32,15 @@ function DashboardCard01() {
           252, 423, 622, 470, 532,
         ],
         fill: true,
+				//@ts-ignore
         backgroundColor: `rgba(${hexToRGB(tailwindConfig().theme.colors.blue[500])}, 0.08)`,
+				//@ts-ignore
         borderColor: tailwindConfig().theme.colors.indigo?.[500]??'#6366F1',
         borderWidth: 2,
         tension: 0,
         pointRadius: 0,
         pointHoverRadius: 3,
+				//@ts-ignore
         pointBackgroundColor: tailwindConfig().theme.colors.indigo?.[500]??'#6366F1',
         clip: 20,
       },
@@ -48,11 +52,13 @@ function DashboardCard01() {
           314, 314, 314, 388, 314, 202, 202,
           202, 202, 314, 720, 642,
         ],
+				//@ts-ignore
         borderColor: tailwindConfig().theme.colors.gray[300],
         borderWidth: 2,
         tension: 0,
         pointRadius: 0,
         pointHoverRadius: 3,
+				//@ts-ignore
         pointBackgroundColor: tailwindConfig().theme.colors.gray[300],
         clip: 20,
       },
@@ -78,10 +84,10 @@ function DashboardCard01() {
             </li>
           </EditMenu>
         </header>
-        <h2 className="text-lg font-semibold text-gray-800 mb-2">Acme Plus</h2>
-        <div className="text-xs font-semibold text-gray-400 uppercase mb-1">Sales</div>
+        <h2 className="text-lg font-semibold text-gray-800 mb-2">Total users</h2>
+        <div className="text-xs font-semibold text-gray-400 uppercase mb-1">Users</div>
         <div className="flex items-start">
-          <div className="text-3xl font-bold text-gray-800 mr-2">$24,780</div>
+          <div className="text-3xl font-bold text-gray-800 mr-2">20</div>
           <div className="text-sm font-semibold text-white px-1.5 bg-green-500 rounded-full">+49%</div>
         </div>
       </div>

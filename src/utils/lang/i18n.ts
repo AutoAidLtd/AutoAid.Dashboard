@@ -11,15 +11,6 @@ import ko from "./locale/ko.json"
 // the translations
 // (tip move them in a JSON file and import them,
 // or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
-const importResources = async()=>{
-	return supportLocales.reduce(async(prev, curr)=>{
-		return {...prev,
-		[curr]:	{
-				translation : await import(`./locale/${curr}.json`)
-			}
-		}
-	},{})
-}
 const resources = {
   en: {
     translation: en,
@@ -37,7 +28,6 @@ const resources = {
 	ko :{
 		translation: ko
 	},
-
 };
 
 // i18n
