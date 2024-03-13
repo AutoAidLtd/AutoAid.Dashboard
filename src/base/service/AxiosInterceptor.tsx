@@ -14,7 +14,7 @@ const AxiosInterceptor: React.FC<PropsWithChildren<{ key?: string }>> = ({
     const token = localStorage.getItem("access_token")
       ? localStorage.getItem("access_token")
       : "";
-    return token ? JSON.parse(token) : "";
+    return token ? token : "";
   };
   useEffect(() => {
     const resInterceptor = (response: AxiosResponse) => {

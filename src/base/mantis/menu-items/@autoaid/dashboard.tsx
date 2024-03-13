@@ -99,7 +99,7 @@ export const application: NavItemType = {
     },
     {
       id: "invoice",
-      title: "invoice",
+      title: "Invoice",
       type: "item",
       icon: icons.ReceiptOutlined,
       url: "/invoice",

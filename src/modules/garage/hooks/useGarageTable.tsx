@@ -66,12 +66,13 @@ const useGarageTable = () => {
             return "Name";
           },
           cell: ({ row }) => (
+
             <Typography  sx={{
               whiteSpace: 'nowrap',
               overflow: 'hidden',
               textOverflow: 'ellipsis',
               }} textAlign={"center"}>
-              Garage Name
+              {row?.original?.name}
             </Typography>
           )
         }),
@@ -145,6 +146,7 @@ const useGarageTable = () => {
           meta: {
             align : "left"
           },
+					size:300,
           enableSorting: false,
 
         }),

@@ -5,7 +5,7 @@ function AnalyticsCard07() {
   return (
     <div className="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
       <header className="px-5 py-4 border-b border-gray-100">
-        <h2 className="font-semibold text-gray-800">Top Countries</h2>
+        <h2 className="font-semibold text-gray-800">Top Place of Request</h2>
       </header>
       <div className="flex-grow p-3">
         <div className="flex flex-col h-full">
@@ -13,7 +13,7 @@ function AnalyticsCard07() {
           <div className="flex-grow">
             <ul className="flex justify-between text-xs uppercase text-gray-400 font-semibold px-2 space-x-2">
               <li>Source</li>
-              <li>Sessions</li>
+              <li>Requests</li>
             </ul>
 
             <ul className="space-y-1 text-sm text-gray-800 mt-3 mb-4">
@@ -21,7 +21,7 @@ function AnalyticsCard07() {
               <li className="relative px-2 py-1">
                 <div className="absolute inset-0 bg-light-blue-100" aria-hidden="true" style={{width: '82%'}}></div>
                 <div className="relative flex justify-between space-x-2">
-                  <div>🇨🇮 Ireland</div>
+                  <div>District 1</div>
                   <div className="font-medium">4.2K</div>
                 </div>
               </li>
@@ -29,7 +29,7 @@ function AnalyticsCard07() {
               <li className="relative px-2 py-1">
                 <div className="absolute inset-0 bg-light-blue-100" aria-hidden="true" style={{width: '70%'}}></div>
                 <div className="relative flex justify-between space-x-2">
-                  <div>🇺🇸 United States</div>
+                  <div>District 2</div>
                   <div className="font-medium">3.4K</div>
                 </div>
               </li>
@@ -37,7 +37,7 @@ function AnalyticsCard07() {
               <li className="relative px-2 py-1">
                 <div className="absolute inset-0 bg-light-blue-100" aria-hidden="true" style={{width: '60%'}}></div>
                 <div className="relative flex justify-between space-x-2">
-                  <div>🇩🇪 Germany</div>
+                  <div>District 2</div>
                   <div className="font-medium">1.6k</div>
                 </div>
               </li>
@@ -45,7 +45,7 @@ function AnalyticsCard07() {
               <li className="relative px-2 py-1">
                 <div className="absolute inset-0 bg-light-blue-100" aria-hidden="true" style={{width: '44%'}}></div>
                 <div className="relative flex justify-between space-x-2">
-                  <div>🇮🇹 Italy</div>
+                  <div>District 4</div>
                   <div className="font-medium">1.2k</div>
                 </div>
               </li>
@@ -53,7 +53,7 @@ function AnalyticsCard07() {
               <li className="relative px-2 py-1">
                 <div className="absolute inset-0 bg-light-blue-100" aria-hidden="true" style={{width: '40%'}}></div>
                 <div className="relative flex justify-between space-x-2">
-                  <div>🇬🇧 United Kingdom</div>
+                  <div>District 5</div>
                   <div className="font-medium">912</div>
                 </div>
               </li>
@@ -61,7 +61,7 @@ function AnalyticsCard07() {
               <li className="relative px-2 py-1">
                 <div className="absolute inset-0 bg-light-blue-100" aria-hidden="true" style={{width: '30%'}}></div>
                 <div className="relative flex justify-between space-x-2">
-                  <div>🇫🇷 France</div>
+                  <div>District 6</div>
                   <div className="font-medium">677</div>
                 </div>
               </li>
@@ -69,7 +69,7 @@ function AnalyticsCard07() {
               <li className="relative px-2 py-1">
                 <div className="absolute inset-0 bg-light-blue-100" aria-hidden="true" style={{width: '22%'}}></div>
                 <div className="relative flex justify-between space-x-2">
-                  <div>🇮🇳 India</div>
+                  <div>District 7</div>
                   <div className="font-medium">449</div>
                 </div>
               </li>
@@ -77,7 +77,7 @@ function AnalyticsCard07() {
               <li className="relative px-2 py-1">
                 <div className="absolute inset-0 bg-light-blue-100" aria-hidden="true" style={{width: '12%'}}></div>
                 <div className="relative flex justify-between space-x-2">
-                  <div>🇸🇬 Singapore</div>
+                  <div>District 8</div>
                   <div className="font-medium">269</div>
                 </div>
               </li>
@@ -85,7 +85,7 @@ function AnalyticsCard07() {
           </div>
           {/* Card footer */}
           <div className="text-center pt-4 pb-1 border-t border-gray-100">
-            <Link className="text-sm font-medium text-indigo-500 hover:text-indigo-600" to="#0">Countries Report -&gt;</Link>
+            <Link className="text-sm font-medium text-indigo-500 hover:text-indigo-600" to="#0">Place Report -&gt;</Link>
           </div>
         </div>
       </div>

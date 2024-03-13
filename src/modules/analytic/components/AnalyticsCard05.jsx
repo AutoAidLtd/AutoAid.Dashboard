@@ -13,7 +13,7 @@ function AnalyticsCard05() {
           <div className="flex-grow">
             <ul className="flex justify-between text-xs uppercase text-gray-400 font-semibold px-2 space-x-2">
               <li>Source</li>
-              <li>Visitors</li>
+              <li>Users</li>
             </ul>
 
             <ul className="space-y-1 text-sm text-gray-800 mt-3 mb-4">

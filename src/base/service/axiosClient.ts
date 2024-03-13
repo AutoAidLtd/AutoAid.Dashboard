@@ -3,7 +3,7 @@ const getToken = () => {
 	const token = localStorage.getItem("access_token")
 		? localStorage.getItem("access_token")
 		: "";
-	return token ? JSON.parse(token) : "";
+	return token ?token : "";
 };
 // const BASE_URL = import.meta.env.VITE_DEV_SERVER_URI;
 // const BASE_URL = "https://localhost:7137";
