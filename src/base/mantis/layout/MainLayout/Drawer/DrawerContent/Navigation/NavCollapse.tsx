@@ -27,7 +27,7 @@ import { BorderOutlined, DownOutlined, UpOutlined } from "@ant-design/icons";
 // types
 import { menuWithDrawerOpen } from "@/base/store/selectors/app";
 import { useRecoilValue } from "recoil";
-import { NavItemType } from "../../../../../../types/menu";
+import { NavItemType } from "@/types/menu";
 
 type VirtualElement = {
   getBoundingClientRect: () => ClientRect | DOMRect;

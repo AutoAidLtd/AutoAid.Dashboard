@@ -17,5 +17,6 @@ export interface GarageAdmin {
 	ownerName?: string;
 	ownerEmail?: string;
 	ownerPhone?: string;
+	name?: string;
 	place?:Place
 }

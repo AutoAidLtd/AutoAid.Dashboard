@@ -397,7 +397,7 @@ function BaseTableV8<T>(props: BaseTableV8Props<T>) {
                 </Fragment>
               );
             })}
-            {data.length === 0 && <NoData />}
+            {data.length === 0 && <NoData noOfRows={columns?.length} />}
           </TableBody>
           {tableFooterRender()}
         </Table>
