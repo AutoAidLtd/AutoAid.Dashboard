@@ -22,9 +22,9 @@ export const hexToRGB = (h) => {
   return `${+r},${+g},${+b}`;
 };
 
-export const formatValue = (value) => Intl.NumberFormat('en-US', {
+export const formatValue = (value) => Intl.NumberFormat('vi-VN', {
   style: 'currency',
-  currency: 'USD',
+  currency: 'VND',
   maximumSignificantDigits: 3,
   notation: 'compact',
 }).format(value);

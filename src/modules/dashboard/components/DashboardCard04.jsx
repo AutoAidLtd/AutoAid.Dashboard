@@ -8,15 +8,15 @@ function DashboardCard04() {
 
   const chartData = {
     labels: [
-      '12-01-2020', '01-01-2021', '02-01-2021',
-      '03-01-2021', '04-01-2021', '05-01-2021',
+      '12-01-2023', '01-01-2024', '02-01-2024',
+      '03-01-2024', '04-01-2024', '05-01-2024',
     ],
     datasets: [
       // Light blue bars
       {
-        label: 'Direct',
+        label: 'Customer',
         data: [
-          800, 1600, 900, 1300, 1950, 1700,
+          0, 140000, 200000, 380000, 0, 0,
         ],
         backgroundColor: tailwindConfig().theme.colors.blue[400],
         hoverBackgroundColor: tailwindConfig().theme.colors.blue[500],
@@ -25,9 +25,9 @@ function DashboardCard04() {
       },
       // Blue bars
       {
-        label: 'Indirect',
+        label: 'Garage',
         data: [
-          4900, 2600, 5350, 4800, 5200, 4800,
+          0, 650000, 1420000, 700000, 0, 0,
         ],
         backgroundColor: tailwindConfig().theme.colors.indigo?.[500]??'#6366F1',
         hoverBackgroundColor: tailwindConfig().theme.colors.indigo[600],

@@ -81,7 +81,7 @@ function DashboardCard03() {
         <h2 className="text-lg font-semibold text-gray-800 mb-2">Income from customer</h2>
         <div className="text-xs font-semibold text-gray-400 uppercase mb-1">Sales</div>
         <div className="flex items-start">
-          <div className="text-3xl font-bold text-gray-800 mr-2">$9,962</div>
+          <div className="text-3xl font-bold text-gray-800 mr-2">720,000 ₫</div>
           <div className="text-sm font-semibold text-white p-1.5 bg-green-500 rounded-full">+49%</div>
         </div>
       </div>
